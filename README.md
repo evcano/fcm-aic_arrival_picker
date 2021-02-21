@@ -3,7 +3,7 @@ DESCRIPTION
 
 This repository contains the code and data used in E.V. Cano, J. Akram, D.B. Peter; Automatic seismic phase picking based on unsupervised machine learning classification and content information analysis; submitted for peer-review in GEOPHYSICS (November 2020).
 
-This repository includes four 3C downhole microseismic datasets (three synthetic and a few real events) and three different picking algorithms (Chen 2020, STA/LTA, and FCM-AIC). Additionally, codes for hypocenter location using damped least-squares are included.
+This repository includes four 3C downhole microseismic datasets (three synthetic and a few real events) and three different picking algorithms. Additionally, codes for hypocenter location using damped least-squares are included.
 
 
 HOW TO USE
