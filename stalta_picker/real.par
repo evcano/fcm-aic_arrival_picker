@@ -1,0 +1,23 @@
+# STA/LTA PARFILE
+#
+# datadir: Data directory.
+# data_format: Data format (SAC or MAT).
+# dt: Data sampling rate (in seconds).
+# tdom: Data dominant period (in samples).
+# {feature}_window: Trace-feature window length (in samples).
+# stalta_thr: STA/LTA value for a pick to occcur.
+# save_fig: Save results figures (0: do not save; 1: save).
+
+# Data information
+datadir=../real_data
+data_format=MAT
+dt=0.0005
+tdom=30
+
+# Trace-features windows
+sta_window=40
+lta_window=160
+stalta_thr=0.3
+
+# Figures
+save_fig=1

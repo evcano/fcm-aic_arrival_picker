@@ -1,0 +1,47 @@
+# AUTOPICKER PARFILE
+#
+# datadir: Data directory.
+# data_format: Data format (SAC or MAT).
+# dt: Data sampling rate (in seconds).
+# tdom: Data dominant period (in samples).
+# {feature}_window: Trace-feature window length (in samples).
+# n_iterations: Fuzzy c-means number of iterations.
+# stop_criteria: Fuzzy c-means stop criteria.
+# pick_thr: How many times the mean of signal membership needs to be exceeded
+#           to consider a candidate arrival window.
+# win_ext: How many dominant periods an arrival window is extended when
+           applying the AIC picker.
+# ransac_samplesize: How many picks are used to fit the arrival moveout on
+                     each RANSAC iteration.
+# ransac_maxdistance: Time-difference threshold between a pick and fitted 
+                      arrival moveout to consider the pick an inlier.
+# save_fig: Save results figures (0: do not save; 1: save).
+# plot_results: Plot picking results per receiver as the algorithm runs.
+
+# Data information
+datadir=../synthetic_data/synthetics_2
+data_format=MAT
+dt=0.0005
+tdom=50
+
+# Trace-features windows
+mean_window=56
+ppsd_window=56
+sta_window=60
+lta_window=260
+
+# Fuzzy c-means
+n_iterations=100
+stop_criteria=0.0001
+
+# Other
+signal_threshold=1
+win_ext=1.0
+
+# RANSAC
+ransac_samplesize=4
+ransac_maxdistance=75
+
+# Figures
+save_fig=1
+plot_results=0
